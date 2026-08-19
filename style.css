@@ -5,8 +5,9 @@ body{
 header{
     background: linear-gradient(to top,#4E5735,#42472B);
     align-items: center;
-    padding: 10px;
+    padding: 3px;
     border-radius: 10px;
+    justify-content: center;
 }
 .tit1{
 color: #ecbe36;
@@ -32,7 +33,6 @@ ul li:hover{
     color: #ecbe36;
     cursor: pointer;
     font-size: x-large;
-    text-decoration: underline;
 }
 li{
     margin-left: 10px;
@@ -53,34 +53,42 @@ li{
     border-radius: 12px;
     padding: 10px;
 }
+.ubicacion{
+    display: flex;
+   justify-content: flex-end;
+    align-items: flex-end;
+}
 iframe{
-    display: block;
+    padding-right: 50px;
     width: 250px;
     height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
+
 }
 footer{
     text-align: center;
 }
 .imagenfondo{
-    background-image: url("fondo.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("baner.png");
+    background-size: 100% 100%;
+    background-position:center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 600px;
     width: auto;
 justify-content: center;
     align-items: center;
     display: flex;
     text-align: center;
+    border-radius: 15px;
 }
 .fondooscuro{
- background-color: rgba(243, 239, 239, 0.5);
- width: 50%;
+ background-color: rgba(193, 191, 191, 0.375);
+ height:77%;
+ width: 15%;
  padding: 50px;
  border-radius: 10px;
+ margin-left: 60%;
+ color: white;
+ 
 }
 .boton{
     background-color: #4E5735;
@@ -88,13 +96,77 @@ justify-content: center;
     border: none;
     padding: 10px 40px;
     text-align: center;
-    text-decoration: none;
+    text-decoration:none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 100px;
     border-radius: 10px;
 } 
 .boton:hover{
     background-color: #42472B;
     cursor: pointer;
+}
+.Bebidas{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+marquee{
+    direction: left;
+    scroll-behavior: initial;
+}
+.Populares{
+    display: flex;  
+}
+.Populares img{
+    width: 150px;
+    margin: 20px;
+}
+main{
+    justify-content: center;
+    justify-items: center;
+}
+.contenidoprod{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color:#42472B;
+    gap: 30px;
+    border-radius: 15px;
+
+}
+.product{
+    background-color: #a4a485;
+    border: #060606;
+    justify-content: center;
+    margin: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+.product img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 40px;
+}
+.precio{
+    display: flex;
+    justify-content: space-around;
+}
+.product h3{
+    background-color: hsl(0, 13%, 91%);
+    padding: 5px;
+    margin-top: 1px;
+}
+.precio p{
+    background-color: #ecbe36;
+    padding: 5px;
+
+}
+.precio button {
+    border:2px,solid,#ecbe36 ;
+    border-radius: 5px;
+    background-color: #a4a485;
+    color: white;
+    padding: 5px 30px;
+    margin : 5px;
 }
